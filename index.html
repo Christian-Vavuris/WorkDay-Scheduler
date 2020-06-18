@@ -26,13 +26,51 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead date"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-2 column1">
+          <div class="hour left-column 9AmHr" id="9am">9am</div>
+          <div class="hour left-column 10AmHr" id="10am">10am</div>
+          <div class="hour left-column 11AmHr" id="11am">11am</div>
+          <div class="hour left-column 12PmHr" id="12pm">12pm</div>
+          <div class="hour left-column 1PmHr" id="1pm">1pm</div>
+          <div class="hour left-column 2PmHr" id="2pm">2pm</div>
+          <div class="hour left-column 3PmHr" id="3pm">3pm</div>
+          <div class="hour left-column 4PmHr" id="4pm">4pm</div>
+          <div class="hour left-column 5PmHr" id="5pm">5pm</div>
+        </div>
+        <div class="col-8 column2">
+          <div class="task center-column 9AmHr" id="9task"><article>To do</article></div>
+          <div class="task center-column 10AmHr" id="10task"><article>To do</article></div>
+          <div class="task center-column 11AmHr" id="11task"><article>To do</article></div>
+          <div class="task center-column 12PmHr" id="12task"><article>To do</article></div>
+          <div class="task center-column 1PmHr" id="1task"><article>To do</article></div>
+          <div class="task center-column 2PmHr" id="2task"><article>To do</article></div>
+          <div class="task center-column 3PmHr" id="3task"><article>To do</article></div>
+          <div class="task center-column 4PmHr" id="4task"><article>To do</article></div>
+          <div class="task center-column 5PmHr" id="5task"><article>To do</article></div>
+        </div>
+        <div class="col-2 column3">
+          <div class="save right-column 9AmHr">Save</div>
+          <div class="save right-column 10AmHr">Save</div>
+          <div class="save right-column 11AmHr">Save</div>
+          <div class="save right-column 12PmHr">Save</div>
+          <div class="save right-column 1PmHr">Save</div>
+          <div class="save right-column 2PmHr">Save</div>
+          <div class="save right-column 3PmHr">Save</div>
+          <div class="save right-column 4PmHr">Save</div>
+          <div class="save right-column 5PmHr">Save</div>
+        </div>
+      </div> 
+
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./WorkDay.js"></script>
   </body>
 </html>
