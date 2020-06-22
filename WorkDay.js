@@ -14,6 +14,11 @@ console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
 // Edit each block to change what is written each hour
 
+// var colorBlock = function () {
+//     if 
+// }
+
+
 // This selects each hour and allows us to change the text 
 $(".task").on("click", "article", function() {
     var text = $(this)
@@ -33,5 +38,11 @@ $(".task").on("click", "article", function() {
 });
 
 // This deselects the hour and leaves the new text
+
+// This saves the item to local storage
+
+var list = JSON.parse(localStorage.getItem('todolist')) || [];
+console.log(list);
+
 
 
